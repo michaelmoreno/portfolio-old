@@ -1,0 +1,66 @@
+@use './global' as *;
+
+#portfolio {
+  background-color: $foreground;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: $text;
+    margin: 0 auto;
+  }
+
+  #showcase {
+    height: 50%;
+    width: 85%;
+    margin: 0 auto;
+    // background-color: $background;
+    border-radius: 15px;
+    display: flex;
+    // border: 1px solid $primary;
+    
+    .project {
+      // width: 250px;
+      height: 290px;
+      margin: auto;
+      background-color: $background;
+      border-top: 10px solid $primary;
+      // border: 3px solid #1a1e22;
+      // border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        height: 200px;
+      }
+      p {
+        margin: auto 0;
+        margin-left: 15px;
+        font-size: 25px;
+        color: $text;
+        // color: #15181b;
+        bottom: 0%;
+      }
+      .flairs {
+        display: flex;
+
+        .flair {
+          // margin: auto 0;
+          margin: 5px;
+          padding: 2px 5px;
+          height: 25px;
+          background-color: $secondary;
+          border-radius: 51px;
+
+          p {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use './global' as *;
+
+nav {
+  position: fixed;
+  background-color: $background;
+  box-shadow: 2px 0 15px 0px rgb(24, 24, 24);
+  width: 95px;
+  height: 100%;
+
+  ul {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    
+    li {
+      // align-self: center;
+      margin: 0;
+      img {
+        width: 50px;
+        color: blue;
+        height: 50px;
+
+        svg {
+          &:hover {
+            fill: white;
+          }
+        }
+        &:hover {
+          fill: white;
+        }
+      }
+    }
+  }
+}
