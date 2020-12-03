@@ -2,9 +2,10 @@
 
 #portfolio {
   background-color: $foreground;
-  height: 700px;
+  // height: 700px;
   display: flex;
   flex-direction: column;
+  padding: 25px;
 
   h2 {
     color: $text;
@@ -12,54 +13,66 @@
   }
 
   #showcase {
-    height: 50%;
+    // height: 50%;
     width: 85%;
-    margin: 0 auto;
+    margin: 10px auto;
+    margin-bottom: 35px;
     // background-color: $background;
     border-radius: 15px;
     display: flex;
-    // border: 1px solid $primary;
+    flex-wrap: wrap;    
     
     .project {
-      // width: 250px;
-      height: 290px;
-      margin: auto;
+      // min-width: 3400px;
+      height: 250px;
+      margin: 20px auto;
       background-color: $background;
       border-top: 10px solid $primary;
-      // border: 3px solid #1a1e22;
-      // border-radius: 10px;
+      border-radius: 5px;
       display: flex;
       flex-direction: column;
+      text-decoration: none;
 
-      img {
+      .thumbnail {
+        background-position: center;
+        background-size: 375px;
+        background-repeat: no-repeat;
         height: 200px;
+        width: 375px;
       }
-      p {
-        margin: auto 0;
-        margin-left: 15px;
-        font-size: 25px;
-        color: $text;
-        // color: #15181b;
-        bottom: 0%;
-      }
-      .flairs {
+      #label {
         display: flex;
-
-        .flair {
-          // margin: auto 0;
-          margin: 5px;
-          padding: 2px 5px;
-          height: 25px;
-          background-color: $secondary;
-          border-radius: 51px;
-
-          p {
-            text-align: center;
-            font-size: 20px;
-            color: white;
-            margin: 0;
-          }
+        justify-content: space-between;
+        margin: auto 10px;
+        
+        p {
+          margin: auto 0;
+          // margin-left: 15px;
+          font-size: 25px;
+          color: $text;
+          // color: #15181b;
+          bottom: 0%;
         }
+        .flairs {
+          display: flex;
+          
+          .flair {
+            // margin: auto 0;
+            margin: 5px;
+            padding: 2px 5px;
+            height: 25px;
+            background-color: $secondary;
+            border-radius: 5px;
+            display: flex;
+
+            p {
+              text-align: center;
+              font-size: 16px;
+              color: white;
+              margin: auto;
+            }
+          }
+        } 
       }
     }
   }

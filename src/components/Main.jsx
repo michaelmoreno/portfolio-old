@@ -19,7 +19,8 @@ export default function Main() {
         <div className="branding">
           <h1>Michael Moreno</h1>
           <h2>Full-Stack web developer</h2>
-          <p>// I'm a software engineer currently based in Houston. </p>
+          <p>// Software engineer currently based in Houston. </p>
+          <h3>Connect</h3>
         </div>
         <div className="code">
           <p className="text">const <span style={{color: '#fff'}}>aboutMe</span> = {`{`}</p>

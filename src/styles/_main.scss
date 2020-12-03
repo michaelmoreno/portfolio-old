@@ -33,6 +33,20 @@
         color: $tertiary;
         font-size: 25px;
       }
+      h3 {
+        display: inline-block;
+        font-size: 25px;
+        padding: 10px;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 3px;
+
+        &:hover {
+          border: 1px solid #29ffa9;
+          color: #29ffa9;
+          cursor: pointer;
+        }
+      }
     }
     .code {
       min-width: 325px;

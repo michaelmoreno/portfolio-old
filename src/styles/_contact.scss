@@ -1,0 +1,9 @@
+@use './global' as *;
+
+#contact {
+  height: 500px;
+  width: 100%;
+  color: blue;
+  background-color: $background;
+  
+}
