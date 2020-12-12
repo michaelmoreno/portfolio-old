@@ -6,9 +6,9 @@ const { default: Main } = require("./components/Main");
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">	
       <Nav />
-      <Main />
+	  <Main />
       <Portfolio />
       <Contact />
     </div>
