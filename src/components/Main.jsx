@@ -30,7 +30,9 @@ export default function Main() {
           <p style={styling.thirdLevel}><span className="value">'JavaScript'</span>,</p>
           <p style={styling.thirdLevel}><span className="value">'Python'</span>,</p>
           <p style={styling.thirdLevel}><span className="value">'HTML/CSS'</span>,</p>
-          <p style={styling.thirdLevel}><span className="value">'PHP/MySQL'</span>,</p>
+          <p style={styling.thirdLevel}><span className="value">'PHP'</span>,</p>
+          <p style={styling.thirdLevel}><span className="value">'SQL'</span>,</p>
+          <p style={styling.thirdLevel}><span className="value">'VBA`'</span>,</p>
           <p style={styling.secondLevel}>],</p>
           <p style={styling.secondLevel}><span className="key">technologies</span>: [</p>
           <p style={styling.thirdLevel}><span className="value">'React'</span>,</p>

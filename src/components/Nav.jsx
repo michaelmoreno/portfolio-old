@@ -12,7 +12,7 @@ export default function Nav() {
         <li><a href="#main"><img src={HomeSVG} alt="Home"/></a></li>
         <li><a href="https://github.com/michaelmoreno" target="_blank"><img src={GithubSVG} alt="GitHub"/></a></li>
         <li><a href="https://linkedin.com/in/michaelmoreno-dev/" target="_blank"><img src={LinkedinSVG} alt="GitHub"/></a></li>
-        <li><a href=""><img src={EmailSVG} alt="GitHub"/></a></li>
+        <li><a href="#contact"><img src={EmailSVG} alt="GitHub"/></a></li>
         <li><a href="#portfolio"><img src={ProjectsSVG} alt="GitHub"/></a></li>
         <li></li>
       </ul>
