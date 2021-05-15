@@ -7,6 +7,50 @@ nav {
   width: 95px;
   height: 100%;
 
+
+
+
+
+  button {
+    border: 1px solid green;
+    position: relative;
+    display: flex;
+    height: 75px;
+    width: 75px;
+    background-color: rgba(0,0,0,0);
+    top: 30px;
+    left: 85px;
+
+    #burger {
+      width: 50px;
+      height: 10px;
+      border-radius: 3px;
+      background-color: $primary;
+      margin: auto;
+      transition: all .5s ease-in-out;
+      
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 10px;
+        border-radius: 3px;
+        background-color: $primary; 
+        transition: all .5s ease-in-out;
+
+      }
+      &::after {
+        transform: translate(-25px, -16px)
+      }
+      &::before {
+        transform: translate(-25px, 16px)
+      }
+    }
+    .active {
+      transform: rotate(-90deg)
+    }
+  }
+
   ul {
     height: 100%;
     margin: 0;
@@ -24,7 +68,7 @@ nav {
         width: 50px;
         color: blue;
         height: 50px;
-
+        
         svg {
           &:hover {
             fill: white;

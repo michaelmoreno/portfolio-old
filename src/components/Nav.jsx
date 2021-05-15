@@ -6,8 +6,12 @@ import EmailSVG from '../styles/media/052-send.svg';
 import ProjectsSVG from '../styles/media/026-search-lineal.svg';
 
 export default function Nav() {
+  
   return (
     <nav>
+      {/* <button>
+        <div id="burger"></div>
+      </button> */}
       <ul>
         <li><a href="#main"><img src={HomeSVG} alt="Home"/></a></li>
         <li><a href="https://github.com/michaelmoreno" target="_blank"><img src={GithubSVG} alt="GitHub"/></a></li>

@@ -2,10 +2,9 @@
 
 #portfolio {
   background-color: $foreground;
-  // height: 700px;
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  width: 100%;
 
   h2 {
     color: $text;
@@ -14,7 +13,7 @@
 
   #showcase {
     // height: 50%;
-    width: 85%;
+    width: 70%;
     margin: 10px auto;
     margin-bottom: 35px;
     // background-color: $background;
@@ -23,8 +22,8 @@
     flex-wrap: wrap;    
     
     .project {
-      // min-width: 3400px;
-      height: 250px;
+      max-height: 250px;
+      max-width: 375px;
       margin: 20px auto;
       background-color: $background;
       border-top: 10px solid $primary;
@@ -48,7 +47,7 @@
         p {
           margin: auto 0;
           // margin-left: 15px;
-          font-size: 25px;
+          font-size: 20px;
           color: $text;
           // color: #15181b;
           bottom: 0%;

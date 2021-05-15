@@ -8,11 +8,12 @@ function App() {
   return (
     <div className="App">	
       <Nav />
-	  <Main />
+	    <Main />
       <Portfolio />
       <Contact />
     </div>
   );
 }
+
 
 export default App;

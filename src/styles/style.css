@@ -2,6 +2,12 @@
   color: #D3D7CF;
 }
 
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 #main {
   width: 100%;
   height: 100vh;
@@ -72,6 +78,42 @@ nav {
   width: 95px;
   height: 100%;
 }
+nav button {
+  border: 1px solid green;
+  position: relative;
+  display: flex;
+  height: 75px;
+  width: 75px;
+  background-color: rgba(0, 0, 0, 0);
+  top: 30px;
+  left: 85px;
+}
+nav button #burger {
+  width: 50px;
+  height: 10px;
+  border-radius: 3px;
+  background-color: #23d18b;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+}
+nav button #burger::before, nav button #burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  border-radius: 3px;
+  background-color: #23d18b;
+  transition: all 0.5s ease-in-out;
+}
+nav button #burger::after {
+  transform: translate(-25px, -16px);
+}
+nav button #burger::before {
+  transform: translate(-25px, 16px);
+}
+nav button .active {
+  transform: rotate(-90deg);
+}
 nav ul {
   height: 100%;
   margin: 0;
@@ -101,14 +143,14 @@ nav ul li img:hover {
   background-color: #21252b;
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  width: 100%;
 }
 #portfolio h2 {
   color: #D3D7CF;
   margin: 0 auto;
 }
 #portfolio #showcase {
-  width: 85%;
+  width: 70%;
   margin: 10px auto;
   margin-bottom: 35px;
   border-radius: 15px;
@@ -116,7 +158,8 @@ nav ul li img:hover {
   flex-wrap: wrap;
 }
 #portfolio #showcase .project {
-  height: 250px;
+  max-height: 250px;
+  max-width: 375px;
   margin: 20px auto;
   background-color: #282c34;
   border-top: 10px solid #23d18b;
@@ -139,7 +182,7 @@ nav ul li img:hover {
 }
 #portfolio #showcase .project #label p {
   margin: auto 0;
-  font-size: 25px;
+  font-size: 20px;
   color: #D3D7CF;
   bottom: 0%;
 }
