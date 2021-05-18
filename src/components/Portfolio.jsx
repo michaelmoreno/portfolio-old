@@ -4,7 +4,7 @@ import chessThumbnail from '../styles/media/chess.gif'
 import portfolioThumbnail from '../styles/media/PortfolioScreenshot.png';
 import boidsThumbnail from '../styles/media/boidsthumbnail.gif';
 import RADThumbnail from '../styles/media/RADThumbnail.PNG';
-import CAThumbnail from '../styles/media/CAThumbnail.PNG';
+import CAThumbnail from '../styles/media/CellularAutomataThumbnail.gif';
 
 export default function Portfolio() {
 
