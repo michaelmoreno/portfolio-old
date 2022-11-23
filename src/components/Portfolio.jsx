@@ -3,7 +3,7 @@ import Project from './Project';
 import chessThumbnail from '../styles/media/chess.gif'
 import portfolioThumbnail from '../styles/media/PortfolioScreenshot.png';
 import boidsThumbnail from '../styles/media/boidsthumbnail.gif';
-import RADThumbnail from '../styles/media/RADThumbnail.PNG';
+import RADThumbnail from '../styles/media/RADThumbnail.png';
 import CAThumbnail from '../styles/media/CellularAutomataThumbnail.gif';
 
 export default function Portfolio() {
@@ -15,7 +15,6 @@ export default function Portfolio() {
         <Project 
           title="Flocking Simulation" flairs={['Physics', 'Quadtree']}
           link="http://michaelmoreno.io/boids-algorithm/"
-          flairs={['Physics', 'Quadtree']}
           thumbnail={boidsThumbnail}/>
         <Project 
           title="Cellular Automata"
@@ -26,16 +25,19 @@ export default function Portfolio() {
           title="Chess"
           link="http://michaelmoreno.io/chess"
           flairs={['jQuery', 'Game Logic']}
-          thumbnail={chessThumbnail}/>
+          thumbnail={chessThumbnail}
+          />
         <Project 
           title="Academic Organization"
           link="https://www.realacademicdebate.org"
           flairs={['PHP', 'SQL']}
-          thumbnail={RADThumbnail}/>
+          thumbnail={RADThumbnail}
+          />
         <Project 
           thumbnail={portfolioThumbnail} 
           title="Personal Site" 
-          flairs={['React', 'Nginx']}/>
+          flairs={['React', 'Nginx']}
+          />
       </div>
     </section>
   )
